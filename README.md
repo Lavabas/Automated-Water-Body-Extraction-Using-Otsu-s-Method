@@ -1,5 +1,4 @@
 # Automated-Water-Body-Extraction-Using-Otsu's-Method
-🛰️ Water Body Detection using Sentinel-2 and Otsu Thresholding in Google Earth Engine
 
 Otsu's Thresholding is an automatic image thresholding method that determines the optimal cutoff value to separate two classes in a single-band image — typically foreground vs. background (in this case, water vs. non-water pixels in an NDWI image).
 
@@ -28,6 +27,7 @@ You use it with .gt(threshold) to create a binary water mask.
 3. Works especially well in cloud-free, bimodal NDWI scenarios.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🛰️ Water Body Detection using Sentinel-2 and Otsu Thresholding in Google Earth Engine
 This Google Earth Engine (GEE) script performs water body extraction for a selected Area in Colombo using Sentinel-2 Surface Reflectance imagery and Normalized Difference Water Index (NDWI). The script incorporates Otsu’s thresholding method to automatically classify water pixels and applies post-processing to reduce noise.
 
 ![image](https://github.com/user-attachments/assets/93f3ba8c-6cab-4bae-9bed-99fa8685d06c)
