@@ -1,27 +1,5 @@
 # Automated-Water-Body-Extraction-Using-Otsu's-Method
 🛰️ Water Body Detection using Sentinel-2 and Otsu Thresholding in Google Earth Engine
-This Google Earth Engine (GEE) script performs water body extraction for a selected Area in Colombo using Sentinel-2 Surface Reflectance imagery and Normalized Difference Water Index (NDWI). The script incorporates Otsu’s thresholding method to automatically classify water pixels and applies post-processing to reduce noise.
-
-![image](https://github.com/user-attachments/assets/93f3ba8c-6cab-4bae-9bed-99fa8685d06c)
-
-![ee-chart](https://github.com/user-attachments/assets/0caae038-a02f-430b-9acf-89c5fd3eda9a)
-
-📌 Objective
-To detect surface water bodies accurately by:
--Computing NDWI from Sentinel-2 bands
--Applying Otsu’s automatic threshold
--Cleaning speckles from the water mask
-
-🗂️ Data Sources
-Sentinel-2 Surface Reflectance: COPERNICUS/S2_SR_HARMONIZED
-Otsu Thresholding Function: Provided by OEEL (users/OEEL/lib:loadAll)
-
-🧠 Applications
-1. Monitoring seasonal waterbody changes
-2Supporting flood mapping
-Surface water inventorying for water resource management
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Otsu's Thresholding is an automatic image thresholding method that determines the optimal cutoff value to separate two classes in a single-band image — typically foreground vs. background (in this case, water vs. non-water pixels in an NDWI image).
 
@@ -48,4 +26,28 @@ You use it with .gt(threshold) to create a binary water mask.
 1. No need to manually guess thresholds (which vary by location/season).
 2. Adapts automatically based on local pixel distributions.
 3. Works especially well in cloud-free, bimodal NDWI scenarios.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This Google Earth Engine (GEE) script performs water body extraction for a selected Area in Colombo using Sentinel-2 Surface Reflectance imagery and Normalized Difference Water Index (NDWI). The script incorporates Otsu’s thresholding method to automatically classify water pixels and applies post-processing to reduce noise.
+
+![image](https://github.com/user-attachments/assets/93f3ba8c-6cab-4bae-9bed-99fa8685d06c)
+
+![ee-chart](https://github.com/user-attachments/assets/0caae038-a02f-430b-9acf-89c5fd3eda9a)
+
+📌 Objective
+To detect surface water bodies accurately by:
+-Computing NDWI from Sentinel-2 bands
+-Applying Otsu’s automatic threshold
+-Cleaning speckles from the water mask
+
+🗂️ Data Sources
+Sentinel-2 Surface Reflectance: COPERNICUS/S2_SR_HARMONIZED
+Otsu Thresholding Function: Provided by OEEL (users/OEEL/lib:loadAll)
+
+🧠 Applications
+1. Monitoring seasonal waterbody changes
+2Supporting flood mapping
+Surface water inventorying for water resource management
+
+
 
