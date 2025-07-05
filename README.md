@@ -21,7 +21,7 @@ Otsu Thresholding Function: Provided by OEEL (users/OEEL/lib:loadAll)
 2Supporting flood mapping
 Surface water inventorying for water resource management
 
----------------------------------------------------------------------------------OTSU'S THRESHOLDING METHOD----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Otsu's Thresholding is an automatic image thresholding method that determines the optimal cutoff value to separate two classes in a single-band image — typically foreground vs. background (in this case, water vs. non-water pixels in an NDWI image).
 
